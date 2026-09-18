@@ -123,25 +123,47 @@
         </div>
     </section> -->
 
-    <!-- SECTION VIDEO SHOWCASE KHUSUS -->
+   <!-- SECTION VIDEO SHOWCASE KHUSUS -->
     <section id="showcase-video" class="py-16 bg-[#121218]/80 border-t border-[#27273A]">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <span class="text-xs font-bold text-[#F97316] uppercase tracking-widest">Featured Reel</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">Showcase Animasi 3D</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8 text-sm">
-                Tampilan hasil render, animasi karakter, dan proses alur kerja produksi 3D secara detail.
-            </p>
+        <div class="max-w-7xl mx-auto px-6">
             
-            <div class="aspect-video w-full rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black">
-                <iframe 
-                    class="w-full h-full" 
-                    src="https://www.youtube.com/embed/irUoq5XVKYg" 
-                    title="Muhammad Virly - 3D Animation Showcase" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+            <!-- PEMUTAR VIDEO DENGAN OVERLAY TEKS & TOMBOL -->
+            <div class="aspect-video w-full rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
+                
+                <!-- VIDEO BACKGROUND -->
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="videos/web.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+
+                <!-- GRADIENT OVERLAY (AGAR TEKS & TOMBOL JELAS) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none"></div>
+
+                <!-- KONTEN TEKS & TOMBOL DI ATAS VIDEO -->
+                <div class="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 z-10">
+                    
+                    <!-- TEKS JUDUL & DESKRIPSI -->
+                    <div class="text-left max-w-xl">
+                        <span class="text-xs font-bold text-[#F97316] uppercase tracking-widest bg-black/40 px-3 py-1 rounded-full border border-orange-500/30 backdrop-blur-sm">
+                            Featured Trailer
+                        </span>
+                        <h2 class="text-2xl md:text-4xl font-extrabold text-white mt-3 mb-2 drop-shadow-md">
+                            Showcase Animasi 3D
+                        </h2>
+                        <p class="text-gray-300 text-xs md:text-sm drop-shadow">
+                            Cuplikan singkat adegan film animasi. Tonton versi lengkapnya di YouTube.
+                        </p>
+                    </div>
+
+                    <!-- TOMBOL YOUTUBE -->
+                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 inline-flex items-center gap-2.5 whitespace-nowrap hover:scale-105">
+                        <i class="fa-brands fa-youtube text-lg"></i>
+                        Tonton Full di YouTube
+                    </a>
+
+                </div>
             </div>
+
         </div>
     </section>
 
