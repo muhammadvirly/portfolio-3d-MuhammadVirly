@@ -19,8 +19,8 @@
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-[#27273A]/50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
             
-            <!-- BRAND LOGO -->
-            <a href="#" class="text-lg sm:text-xl font-extrabold tracking-wider text-white">
+            <!-- BRAND LOGO (SEBELAH KIRI) -->
+            <a href="#" class="text-base sm:text-xl font-extrabold tracking-wider text-white shrink-0">
                 Muhammad Virly <span class="text-[#F97316]">.</span>
             </a>
     
@@ -34,28 +34,28 @@
                 <a href="#contact" class="hover:text-[#F97316] transition">Kontak</a>
             </div>
     
-            <!-- RIGHT SIDE ACTIONS (Portfolio Links + Hamburger di Paling Kanan) -->
-            <div class="flex items-center gap-2 sm:gap-3">
+            <!-- RIGHT SIDE ACTIONS (SEMUA TOMBOL DIPAKSA RATA KANAN) -->
+            <div class="flex items-center justify-end gap-2 ml-auto">
                 
-                <!-- DROPDOWN PORTFOLIO LINKS (Di sebelah kiri ikon hamburger) -->
+                <!-- DROPDOWN PORTFOLIO LINKS -->
                 <div class="relative group">
-                    <button class="px-3.5 py-1.5 sm:px-5 sm:py-2 bg-[#F97316] hover:bg-orange-600 text-white font-bold text-xs sm:text-sm rounded-full transition shadow-lg shadow-orange-500/20 flex items-center gap-1.5 sm:gap-2">
+                    <button class="px-3 py-1.5 sm:px-5 sm:py-2 bg-[#F97316] hover:bg-orange-600 text-white font-bold text-[11px] sm:text-sm rounded-full transition shadow-lg shadow-orange-500/20 flex items-center gap-1 sm:gap-2 whitespace-nowrap">
                         <span>Portfolio Links</span>
-                        <i class="fa-solid fa-chevron-down text-[10px] sm:text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                        <i class="fa-solid fa-chevron-down text-[9px] sm:text-xs transition-transform duration-300 group-hover:rotate-180"></i>
                     </button>
     
-                    <!-- Dropdown Box (Disesuaikan agar rata kanan layar) -->
-                    <div class="absolute right-0 mt-2 w-48 bg-[#121218] border border-[#27273A] rounded-2xl shadow-2xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top-right group-hover:translate-y-0 translate-y-2">
+                    <!-- Dropdown Box -->
+                    <div class="absolute right-0 mt-2 w-44 sm:w-48 bg-[#121218] border border-[#27273A] rounded-2xl shadow-2xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top-right group-hover:translate-y-0 translate-y-2">
                         <div class="py-1.5">
                             <a href="https://www.artstation.com/muhammadvirly" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2.5 text-xs text-gray-300 hover:text-white hover:bg-[#1A1A24] transition-colors">
-                                <span class="flex items-center gap-2.5 font-medium">
+                                <span class="flex items-center gap-2 font-medium">
                                     <i class="fa-brands fa-artstation text-orange-400 text-sm"></i>
                                     ArtStation
                                 </span>
                                 <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-gray-500"></i>
                             </a>
                             <a href="https://sketchfab.com/Lyric_3d" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2.5 text-xs text-gray-300 hover:text-white hover:bg-[#1A1A24] transition-colors">
-                                <span class="flex items-center gap-2.5 font-medium">
+                                <span class="flex items-center gap-2 font-medium">
                                     <i class="fa-solid fa-cube text-blue-400 text-sm"></i>
                                     Sketchfab
                                 </span>
@@ -65,22 +65,24 @@
                     </div>
                 </div>
     
-                <!-- HAMBURGER MENU BUTTON (Paling Kanan di HP) -->
-                <button id="mobile-menu-btn" class="lg:hidden text-gray-300 hover:text-white text-xl p-1.5 focus:outline-none ml-1">
+                <!-- HAMBURGER MENU BUTTON (PALING KANAN) -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-300 hover:text-white text-xl p-1 focus:outline-none shrink-0">
                     <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </button>
     
             </div>
         </div>
-    
-        <!-- MOBILE MENU PANEL (Sembunyi secara default, terbuka saat diklik) -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-[#121218]/95 border-b border-[#27273A] px-6 py-4 space-y-3 backdrop-blur-lg">
-            <a href="#about" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Tentang</a>
-            <a href="#showcase-video" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Showcase Video</a>
-            <a href="#pipeline" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Pipeline 3D</a>
-            <a href="#karakter" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Galeri Aset 3D</a>
-            <a href="#projects" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Proyek</a>
-            <a href="#contact" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Kontak</a>
+        <!-- MOBILE MENU PANEL -->
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-full right-4 w-56 bg-[#121218]/95 border border-[#27273A] px-5 py-4 backdrop-blur-lg shadow-2xl rounded-2xl z-50">
+            <!-- LINK NAVIGASI (RATA KANAN) -->
+            <div class="space-y-3 text-right">
+                <a href="#about" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Tentang</a>
+                <a href="#showcase-video" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Showcase Video</a>
+                <a href="#pipeline" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Pipeline 3D</a>
+                <a href="#karakter" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Galeri Aset 3D</a>
+                <a href="#projects" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Proyek</a>
+                <a href="#contact" class="block text-gray-300 hover:text-[#F97316] font-medium text-sm transition">Kontak</a>
+            </div>
         </div>
     </nav>
     
