@@ -182,12 +182,12 @@
         </div>
     </section> -->
 
-   <!-- SECTION VIDEO SHOWCASE KHUSUS -->
-    <section id="showcase-video" class="py-16 bg-[#121218]/80 border-t border-[#27273A]">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- SECTION VIDEO SHOWCASE KHUSUS (RESPONSIF HP & LAPTOP) -->
+    <section id="showcase-video" class="py-12 sm:py-16 bg-[#121218]/80 border-t border-[#27273A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
             
             <!-- PEMUTAR VIDEO DENGAN OVERLAY TEKS & TOMBOL -->
-            <div class="aspect-video w-full rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
+            <div class="aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
                 
                 <!-- VIDEO BACKGROUND -->
                 <video class="w-full h-full object-cover" autoplay loop muted playsinline>
@@ -195,35 +195,79 @@
                     Browser Anda tidak mendukung pemutar video.
                 </video>
 
-                <!-- GRADIENT OVERLAY (AGAR TEKS & TOMBOL JELAS) -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none"></div>
+                <!-- GRADIENT OVERLAY (LEBIH PEKAT DI HP AGAR TEKS TETAP JELAS) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
 
                 <!-- KONTEN TEKS & TOMBOL DI ATAS VIDEO -->
-                <div class="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 z-10">
+                <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 sm:gap-6 z-10">
                     
                     <!-- TEKS JUDUL & DESKRIPSI -->
                     <div class="text-left max-w-xl">
-                        <span class="text-xs font-bold text-[#F97316] uppercase tracking-widest bg-black/40 px-3 py-1 rounded-full border border-orange-500/30 backdrop-blur-sm">
+                        <span class="text-[10px] sm:text-xs font-bold text-[#F97316] uppercase tracking-widest bg-black/50 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-orange-500/30 backdrop-blur-sm">
                             Featured Trailer
                         </span>
-                        <h2 class="text-2xl md:text-4xl font-extrabold text-white mt-3 mb-2 drop-shadow-md">
+                        <h2 class="text-lg sm:text-2xl md:text-4xl font-extrabold text-white mt-2 sm:mt-3 mb-1 sm:mb-2 drop-shadow-md">
                             Showcase Animasi 3D
                         </h2>
-                        <p class="text-gray-300 text-xs md:text-sm drop-shadow">
+                        <p class="text-gray-300 text-[11px] sm:text-xs md:text-sm drop-shadow line-clamp-2 sm:line-clamp-none">
                             Cuplikan singkat adegan film animasi. Tonton versi lengkapnya di YouTube.
                         </p>
                     </div>
 
-                    <!-- TOMBOL YOUTUBE -->
-                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 inline-flex items-center gap-2.5 whitespace-nowrap hover:scale-105">
-                        <i class="fa-brands fa-youtube text-lg"></i>
-                        Tonton Full di YouTube
+                    <!-- TOMBOL YOUTUBE (LEBAR PENUH DI HP SANGAT KECIL / LEBIH PROPORSIOAL) -->
+                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-xs sm:text-sm rounded-lg sm:rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 flex items-center justify-center gap-2 whitespace-nowrap hover:scale-105 mt-1 sm:mt-0">
+                        <i class="fa-brands fa-youtube text-base sm:text-lg"></i>
+                        <span>Tonton Full di YouTube</span>
                     </a>
+
                 </div>
             </div>
+
+        </div>
+    </section>   <!-- SECTION VIDEO SHOWCASE KHUSUS (RESPONSIF HP & LAPTOP) -->
+    <section id="showcase-video" class="py-12 sm:py-16 bg-[#121218]/80 border-t border-[#27273A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <!-- PEMUTAR VIDEO DENGAN OVERLAY TEKS & TOMBOL -->
+            <div class="aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
+                
+                <!-- VIDEO BACKGROUND -->
+                <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <source src="videos/web.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+
+                <!-- GRADIENT OVERLAY (LEBIH PEKAT DI HP AGAR TEKS TETAP JELAS) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
+
+                <!-- KONTEN TEKS & TOMBOL DI ATAS VIDEO -->
+                <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 sm:gap-6 z-10">
+                    
+                    <!-- TEKS JUDUL & DESKRIPSI -->
+                    <div class="text-left max-w-xl">
+                        <span class="text-[10px] sm:text-xs font-bold text-[#F97316] uppercase tracking-widest bg-black/50 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-orange-500/30 backdrop-blur-sm">
+                            Featured Trailer
+                        </span>
+                        <h2 class="text-lg sm:text-2xl md:text-4xl font-extrabold text-white mt-2 sm:mt-3 mb-1 sm:mb-2 drop-shadow-md">
+                            Showcase Animasi 3D
+                        </h2>
+                        <p class="text-gray-300 text-[11px] sm:text-xs md:text-sm drop-shadow line-clamp-2 sm:line-clamp-none">
+                            Cuplikan singkat adegan film animasi. Tonton versi lengkapnya di YouTube.
+                        </p>
+                    </div>
+
+                    <!-- TOMBOL YOUTUBE (LEBAR PENUH DI HP SANGAT KECIL / LEBIH PROPORSIOAL) -->
+                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-xs sm:text-sm rounded-lg sm:rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 flex items-center justify-center gap-2 whitespace-nowrap hover:scale-105 mt-1 sm:mt-0">
+                        <i class="fa-brands fa-youtube text-base sm:text-lg"></i>
+                        <span>Tonton Full di YouTube</span>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </section>
-
+    
     <!-- SECTION SHOWCASE ASET & KARAKTER -->
     <section id="galeri-aset" class="py-20 bg-[#0A0A0C] border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-6">
