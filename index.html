@@ -68,8 +68,39 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION DENGAN UKURAN GAMBAR YANG DISESUAIKAN -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-12 relative overflow-hidden bg-center bg-no-repeat" style="background-image: url('images/Pantai.png'); background-size: 100% auto;">
+        
+        <!-- OVERLAY GELAP AGAR TEKS TETAP JELAS DIBACA -->
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+
+        <!-- EFEK GLOW ORANGE (OPSIONAL) -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#F97316]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- KONTEN HERO -->
+        <div class="max-w-5xl mx-auto px-6 text-center z-10 relative">
+            <span class="px-4 py-1.5 rounded-full border border-orange-500/30 text-[#F97316] text-xs font-bold uppercase tracking-widest bg-orange-500/10">
+                3D Generalist & Animator
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mt-6 mb-6 leading-tight">
+                Mewujudkan Imajinasi Menjadi <span class="text-orange-500">Animasi 3D</span>
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+                Halo, aku <span class="text-white font-semibold">Muhammad Virly</span>. Spesialis alur kerja produksi animasi 3D end-to-end, berfokus pada <em class="text-orange-400 font-medium">Character & Asset Modeling</em>, <em class="text-orange-400 font-medium">Environment Design</em>, <em class="text-orange-400 font-medium">UV Unwrapping</em>, <em class="text-orange-400 font-medium">Rigging & Animation</em>, hingga tahap <em class="text-orange-400 font-medium">Lighting & Final Rendering</em>.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#showcase-video" class="px-8 py-3.5 bg-[#F97316] hover:bg-orange-600 text-white font-bold rounded-xl transition shadow-lg shadow-orange-500/25">
+                    <i class="fa-solid fa-play mr-2"></i> Tonton Showcase Video
+                </a>
+                <a href="#projects" class="px-8 py-3.5 bg-[#121218]/80 border border-[#27273A] hover:border-gray-500 text-white font-semibold rounded-xl transition backdrop-blur-sm">
+                    Lihat Proyek
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- HERO SECTION -->
-    <section class="min-h-screen flex items-center justify-center pt-24 pb-12 relative overflow-hidden">
+    <!-- <section class="min-h-screen flex items-center justify-center pt-24 pb-12 relative overflow-hidden">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#F97316]/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="max-w-5xl mx-auto px-6 text-center z-10">
             <span class="px-4 py-1.5 rounded-full border border-orange-500/30 text-[#F97316] text-xs font-bold uppercase tracking-widest bg-orange-500/10">
@@ -90,7 +121,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- SECTION VIDEO SHOWCASE KHUSUS -->
     <section id="showcase-video" class="py-16 bg-[#121218]/80 border-t border-[#27273A]">
