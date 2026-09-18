@@ -1,0 +1,35 @@
+/* Custom Glow Effect untuk kartu sertifikasi */
+.glow-effect {
+    box-shadow: 0 0 50px -10px rgba(249, 115, 22, 0.15);
+}
+
+/* Animasi sederhana pada kartu Pipeline saat di-hover */
+.pipeline-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pipeline-card:hover {
+    transform: translateY(-4px);
+}
+
+.pipeline-card:hover .pipeline-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Kustomisasi scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A0C;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27273A;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F97316;
+}
