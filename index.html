@@ -261,8 +261,8 @@
         </div>
     </section>
     
-<!-- SECTION SHOWCASE ASET & KARAKTER -->
-    <section id="galeri-aset" class="py-12 md:py-20 bg-[#0A0A0C] border-t border-[#27273A]">
+        <!-- SECTION SHOWCASE ASET & KARAKTER -->
+        <section id="galeri-aset" class="py-12 md:py-20 bg-[#0A0A0C] border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-6">
             
             <!-- HEADER KATEGORI 1: KARAKTER -->
@@ -597,348 +597,549 @@
     </script>
 
     <!-- SECTION SHOWCASE ASET PROPERTI -->
-    <section id="galeri-props" class="py-20 bg-[#0A0A0C] border-t border-[#27273A]">
+    <section id="galeri-props" class="py-12 md:py-20 bg-[#0A0A0C] border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-6">
             
-        <!-- HEADER KATEGORI 2: PROPERTI  -->
-        <div id="properti" class="mb-8">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Aset Properti (Props)</h2>
-            <p class="text-gray-400 text-sm">Model 3D arsitektur, vegetasi, perlengkapan, dan pendukung adegan.</p>
-        </div>
-
-        <!-- GRID PROPERTI -->
-        <div id="grid-properti" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        
-        <!-- 1. Rumah Gadang Card (Tampil Utama) -->
-        <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Rumah Gadang" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/c1513e858c2941b78b81fbb97fcb7b99/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
+            <!-- HEADER KATEGORI 2: PROPERTI -->
+            <div id="properti" class="mb-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">Aset Properti (Props)</h2>
+                <p class="text-gray-400 text-sm">Model 3D arsitektur, vegetasi, perlengkapan, dan pendukung adegan.</p>
             </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Rumah Gadang</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D Rumah Gadang, rumah adat khas Minangkabau. Dirancang detail dengan elemen atap bergonjong, struktur panggung, hingga motif anyaman bambu pada dinding bangunan.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">3D Architecture</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Texturing PBR</span>
+
+            <!-- ================= TAMPILAN MOBILE (HP) ================= -->
+            <!-- ================= TAMPILAN MOBILE (SLIDER FULL 16 ASET) ================= -->
+            <div id="slider-properti-mobile" class="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mb-8 scrollbar-hide">
+
+                <!-- 1. Rumah Gadang -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Rumah Gadang" class="w-full h-full border-0" src="https://sketchfab.com/models/c1513e858c2941b78b81fbb97fcb7b99/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Rumah Gadang</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D Rumah Gadang, rumah adat khas Minangkabau dengan atap bergonjong dan struktur panggung.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Architecture</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Texturing PBR</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 2. Rumah Penduduk 1 Card (Tampil Utama) -->
-        <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Rumah Penduduk 1" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/76b788315e444e90a41888aada93867e/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Rumah Penduduk 1</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D rumah penduduk khas Minangkabau berarsitektur tradisional. Dilengkapi elemen atap bergonjong, struktur panggung kayu, dan tangga masuk utama.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">3D Environment</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Stylized</span>
+                <!-- 2. Rumah Penduduk 1 -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Rumah Penduduk 1" class="w-full h-full border-0" src="https://sketchfab.com/models/76b788315e444e90a41888aada93867e/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Rumah Penduduk 1</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D rumah penduduk khas Minangkabau berarsitektur tradisional.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Environment</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Stylized</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 3. Rumah Penduduk 2 (Tampil Utama) -->
-        <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-rumah-penduduk2.png" alt="Rumah Penduduk 2" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Rumah Penduduk 2</h3>
-                <p class="text-gray-400 text-xs mb-4">Variasi struktur rumah kayu pendukung untuk menambah keanekaragaman lanskap desa.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Hard Surface</span>
+                <!-- 3. Rumah Penduduk 2 -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-rumah-penduduk2.png" alt="Rumah Penduduk 2" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Rumah Penduduk 2</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Variasi struktur rumah kayu pendukung untuk menambah keanekaragaman lanskap desa.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Hard Surface</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- ===== OBJEK TAMBAHAN (Disembunyikan secara default) ===== -->
-
-        <!-- 4. Balai Adat Card -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Balai Adat" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/7398811892234058a488500647aefd35/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Balai Adat</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D Balai Adat khas Minangkabau berkonsep stylized low-poly (~23k tris). Menampilkan struktur panggung terbuka, atap bergonjong, dan tangga utama yang teroptimasi.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Architecture</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                <!-- 4. Balai Adat -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Balai Adat" class="w-full h-full border-0" src="https://sketchfab.com/models/7398811892234058a488500647aefd35/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Balai Adat</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D Balai Adat khas Minangkabau berkonsep stylized low-poly (~23k tris).</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Architecture</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 5. Perahu Besar Card -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Perahu Besar" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/9b524a2e90c249d6b21580af39fe5873/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Perahu Besar</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D kapal layar besar dengan gaya stylized mid-poly. Dilengkapi detail struktur kayu, susunan layar, serta tali-temali yang teroptimasi untuk aset game dan animasi.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vehicle 3D</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Mid Poly</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Stylized</span>
+                <!-- 5. Perahu Besar -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Perahu Besar" class="w-full h-full border-0" src="https://sketchfab.com/models/9b524a2e90c249d6b21580af39fe5873/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Perahu Besar</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D kapal layar besar dengan gaya stylized mid-poly.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Vehicle 3D</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Mid Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Stylized</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 6. Kandang Kerbau -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-kandang.png" alt="Kandang Kerbau" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Kandang Kerbau</h3>
-                <p class="text-gray-400 text-xs mb-4">Struktur pagar kayu bambu dan atap jerami tempat penampungan kerbau aduan.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Prop</span>
+                <!-- 6. Kandang Kerbau -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-kandang.png" alt="Kandang Kerbau" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Kandang Kerbau</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Struktur pagar kayu bambu dan atap jerami tempat penampungan kerbau aduan.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Prop</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 7. Tanduk Besi -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-tanduk-besi.png" alt="Tanduk Besi" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Tanduk Besi</h3>
-                <p class="text-gray-400 text-xs mb-4">Senjata besi tajam yang dirancang khusus untuk dipasangkan pada anak kerbau.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                <!-- 7. Tanduk Besi -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-tanduk-besi.png" alt="Tanduk Besi" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Tanduk Besi</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Senjata besi tajam yang dirancang khusus untuk dipasangkan pada anak kerbau.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 8. Tombak -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-tombak.png" alt="Tombak" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Tombak Traditional</h3>
-                <p class="text-gray-400 text-xs mb-4">Senjata tajam jarak jauh dengan tekstur gagang kayu dan mata besi cor.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                <!-- 8. Tombak -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-tombak.png" alt="Tombak Traditional" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Tombak Traditional</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Senjata tajam jarak jauh dengan tekstur gagang kayu dan mata besi cor.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 9. Perisai -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-perisai.png" alt="Perisai" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Perisai Pelindung</h3>
-                <p class="text-gray-400 text-xs mb-4">Perlengkapan pertahanan pasukan dengan ornamen motif ukiran tradisional.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                <!-- 9. Perisai -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-perisai.png" alt="Perisai Pelindung" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Perisai Pelindung</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Perlengkapan pertahanan pasukan dengan ornamen motif ukiran tradisional.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 10. Pohon Card -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Pohon" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/ff467fc4b2da4f088e0259d749581f19/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Pohon</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D Pohon berkonsep stylized low-poly. Aset vegetasi peneduh yang dirancang untuk melengkapi lanskap pemukiman, pekarangan, dan area terbuka pedesaan Minangkabau.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vegetation</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Nature</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                <!-- 10. Pohon -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Pohon" class="w-full h-full border-0" src="https://sketchfab.com/models/ff467fc4b2da4f088e0259d749581f19/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Pohon</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D Pohon berkonsep stylized low-poly untuk aset vegetasi peneduh.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Vegetation</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Nature</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 11. Pohon Kelapa Card -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
-            <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                <iframe 
-                    title="Pohon Kelapa" 
-                    class="w-full h-full border-0"
-                    src="https://sketchfab.com/models/4b4c248825374ca58d2432c47be5ea43/embed?autostart=1&ui_theme=dark" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" 
-                    execution-while-out-of-viewport 
-                    execution-while-not-rendered 
-                    web-share>
-                </iframe>
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Pohon Kelapa</h3>
-                <p class="text-gray-400 text-xs mb-4 leading-relaxed">
-                    Model 3D Pohon Kelapa berkonsep stylized low-poly. Aset vegetasi tropis yang dirancang untuk melengkapi lingkungan pedesaan Minangkabau dan lanskap pantai.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vegetation</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Nature</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                <!-- 11. Pohon Kelapa -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Pohon Kelapa" class="w-full h-full border-0" src="https://sketchfab.com/models/4b4c248825374ca58d2432c47be5ea43/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Pohon Kelapa</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D Pohon Kelapa berkonsep stylized low-poly untuk vegetasi tropis.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Vegetation</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Nature</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 12. Pohon Pisang -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-pohon-pisang.png" alt="Pohon Pisang" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Pohon Pisang</h3>
-                <p class="text-gray-400 text-xs mb-4">Vegetasi pekarangan warga untuk memperkuat atmosfer pedesaan alami.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Foliage</span>
+                <!-- 12. Pohon Pisang -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-pohon-pisang.png" alt="Pohon Pisang" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Pohon Pisang</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Vegetasi pekarangan warga untuk memperkuat atmosfer pedesaan alami.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Foliage</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 13. Rumput -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-rumput.png" alt="Rumput Ground" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Aset Rumput</h3>
-                <p class="text-gray-400 text-xs mb-4">Rumpun vegetasi darat pendek untuk variasi penutup permukaan tanah (ground cover).</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Scatter Foliage</span>
+                <!-- 13. Rumput -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-rumput.png" alt="Rumput Ground" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Aset Rumput</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Rumpun vegetasi darat pendek untuk variasi penutup permukaan tanah.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Scatter Foliage</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 14. Semak -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-semak.png" alt="Semak Belukar" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Semak Belukar</h3>
-                <p class="text-gray-400 text-xs mb-4">Tanaman semak liar untuk menghiasi sudut jalanan dan pinggiran hutan.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Foliage</span>
+                <!-- 14. Semak -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-semak.png" alt="Semak Belukar" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Semak Belukar</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Tanaman semak liar untuk menghiasi sudut jalanan dan pinggiran hutan.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Foliage</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 15. Batu -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-batu.png" alt="Batu Alam" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Batu Alam</h3>
-                <p class="text-gray-400 text-xs mb-4">Batuan alam permukaan dengan detail tekstur tebing dan lumut.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Environment Prop</span>
+                <!-- 15. Batu -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-batu.png" alt="Batu Alam" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Batu Alam</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Batuan alam permukaan dengan detail tekstur tebing dan lumut.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Environment Prop</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- 16. Pagar Kayu -->
-        <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
-            <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
-                <img src="images/3d-pagar-kayu.png" alt="Pagar Kayu" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
-            </div>
-            <div class="p-5">
-                <h3 class="font-bold text-white text-lg mb-2">Pagar Kayu</h3>
-                <p class="text-gray-400 text-xs mb-4">Pembatas wilayah pekarangan dan jalan desa bersusun batang kayu modular.</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Modular Prop</span>
+                <!-- 16. Pagar Kayu -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-pagar-kayu.png" alt="Pagar Kayu" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Pagar Kayu</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Pembatas wilayah pekarangan dan jalan desa bersusun batang kayu modular.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Modular Prop</span>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
+            <!-- ================= TAMPILAN DESKTOP (WEB) ================= -->
+            <!-- Grid khusus desktop (md:grid) -->
+            <div id="grid-properti" class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            
+                <!-- 1. Rumah Gadang -->
+                <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Rumah Gadang" class="w-full h-full border-0" src="https://sketchfab.com/models/c1513e858c2941b78b81fbb97fcb7b99/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Rumah Gadang</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D Rumah Gadang, rumah adat khas Minangkabau. Dirancang detail dengan elemen atap bergonjong, struktur panggung, hingga motif anyaman bambu pada dinding bangunan.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">3D Architecture</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Texturing PBR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Rumah Penduduk 1 -->
+                <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Rumah Penduduk 1" class="w-full h-full border-0" src="https://sketchfab.com/models/76b788315e444e90a41888aada93867e/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Rumah Penduduk 1</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D rumah penduduk khas Minangkabau berarsitektur tradisional. Dilengkapi elemen atap bergonjong, struktur panggung kayu, dan tangga masuk utama.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">3D Environment</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Stylized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Rumah Penduduk 2 -->
+                <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-rumah-penduduk2.png" alt="Rumah Penduduk 2" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Rumah Penduduk 2</h3>
+                        <p class="text-gray-400 text-xs mb-4">Variasi struktur rumah kayu pendukung untuk menambah keanekaragaman lanskap desa.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Hard Surface</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== OBJEK TAMBAHAN DESKTOP (Disembunyikan secara default) ===== -->
+
+                <!-- 4. Balai Adat -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Balai Adat" class="w-full h-full border-0" src="https://sketchfab.com/models/7398811892234058a488500647aefd35/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Balai Adat</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D Balai Adat khas Minangkabau berkonsep stylized low-poly (~23k tris). Menampilkan struktur panggung terbuka, atap bergonjong, dan tangga utama yang teroptimasi.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Minangkabau</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Architecture</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Perahu Besar -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Perahu Besar" class="w-full h-full border-0" src="https://sketchfab.com/models/9b524a2e90c249d6b21580af39fe5873/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Perahu Besar</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D kapal layar besar dengan gaya stylized mid-poly. Dilengkapi detail struktur kayu, susunan layar, serta tali-temali yang teroptimasi untuk aset game dan animasi.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vehicle 3D</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Mid Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Stylized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Kandang Kerbau -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-kandang.png" alt="Kandang Kerbau" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Kandang Kerbau</h3>
+                        <p class="text-gray-400 text-xs mb-4">Struktur pagar kayu bambu dan atap jerami tempat penampungan kerbau aduan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Tanduk Besi -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-tanduk-besi.png" alt="Tanduk Besi" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Tanduk Besi</h3>
+                        <p class="text-gray-400 text-xs mb-4">Senjata besi tajam yang dirancang khusus untuk dipasangkan pada anak kerbau.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Tombak -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-tombak.png" alt="Tombak" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Tombak Traditional</h3>
+                        <p class="text-gray-400 text-xs mb-4">Senjata tajam jarak jauh dengan tekstur gagang kayu dan mata besi cor.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Perisai -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-perisai.png" alt="Perisai" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Perisai Pelindung</h3>
+                        <p class="text-gray-400 text-xs mb-4">Perlengkapan pertahanan pasukan dengan ornamen motif ukiran tradisional.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Weapon Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Pohon -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Pohon" class="w-full h-full border-0" src="https://sketchfab.com/models/ff467fc4b2da4f088e0259d749581f19/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Pohon</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D Pohon berkonsep stylized low-poly. Aset vegetasi peneduh yang dirancang untuk melengkapi lanskap pemukiman, pekarangan, dan area terbuka pedesaan Minangkabau.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vegetation</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Nature</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Pohon Kelapa -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
+                    <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Pohon Kelapa" class="w-full h-full border-0" src="https://sketchfab.com/models/4b4c248825374ca58d2432c47be5ea43/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Pohon Kelapa</h3>
+                        <p class="text-gray-400 text-xs mb-4 leading-relaxed">
+                            Model 3D Pohon Kelapa berkonsep stylized low-poly. Aset vegetasi tropis yang dirancang untuk melengkapi lingkungan pedesaan Minangkabau dan lanskap pantai.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Vegetation</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Nature</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Low Poly</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Pohon Pisang -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-pohon-pisang.png" alt="Pohon Pisang" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Pohon Pisang</h3>
+                        <p class="text-gray-400 text-xs mb-4">Vegetasi pekarangan warga untuk memperkuat atmosfer pedesaan alami.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Foliage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Rumput -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-rumput.png" alt="Rumput Ground" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Aset Rumput</h3>
+                        <p class="text-gray-400 text-xs mb-4">Rumpun vegetasi darat pendek untuk variasi penutup permukaan tanah (ground cover).</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Scatter Foliage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. Semak -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-semak.png" alt="Semak Belukar" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Semak Belukar</h3>
+                        <p class="text-gray-400 text-xs mb-4">Tanaman semak liar untuk menghiasi sudut jalanan dan pinggiran hutan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Foliage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. Batu -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-batu.png" alt="Batu Alam" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Batu Alam</h3>
+                        <p class="text-gray-400 text-xs mb-4">Batuan alam permukaan dengan detail tekstur tebing dan lumut.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Environment Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16. Pagar Kayu -->
+                <div class="extra-props hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
+                    <div class="h-56 overflow-hidden bg-[#0A0A0E] flex items-center justify-center p-2">
+                        <img src="images/3d-pagar-kayu.png" alt="Pagar Kayu" class="zoomable w-full h-full object-contain group-hover:scale-105 transition duration-500 cursor-zoom-in">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-white text-lg mb-2">Pagar Kayu</h3>
+                        <p class="text-gray-400 text-xs mb-4">Pembatas wilayah pekarangan dan jalan desa bersusun batang kayu modular.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2.5 py-1 rounded-md border border-[#27273A]">Modular Prop</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TOMBOL SHOW MORE / LESS UNTUK PROPERTI (Hanya di Desktop) -->
+            <div class="hidden md:block text-center pt-8 pb-16 border-b border-[#27273A]">
+                <button id="btn-toggle-properti" onclick="toggleProperti()" class="bg-[#F97316] hover:bg-[#EA580C] text-white text-sm font-semibold px-8 py-3 rounded-xl border border-[#F97316] transition-all duration-300 shadow-lg inline-flex items-center gap-2 group cursor-pointer">
+                    <span id="btn-text-props">Lihat Selengkapnya</span>
+                    <svg id="btn-icon-props" class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+            </div>
+
         </div>
-
-    </div>
-
-    <!-- TOMBOL SHOW MORE / LESS UNTUK PROPERTI -->
-    <div class="text-center pt-8 pb-16 border-b border-[#27273A]">
-        <button id="btn-toggle-properti" onclick="toggleProperti()" class="bg-[#F97316] hover:bg-[#EA580C] text-white text-sm font-semibold px-8 py-3 rounded-xl border border-[#F97316] transition-all duration-300 shadow-lg inline-flex items-center gap-2 group cursor-pointer">
-            <span id="btn-text-props">Lihat Selengkapnya</span>
-            <svg id="btn-icon-props" class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-        </button>
-    </div>
+    </section>
 
     <!-- SCRIPT TOGGLE JAVASCRIPT -->
     <script>
     function toggleProperti() {
-        // Memanggil class 'extra-props' sesuai pada elemen HTML Anda
         const extraItems = document.querySelectorAll('.extra-props');
         const btnText = document.getElementById('btn-text-props');
         const btnIcon = document.getElementById('btn-icon-props');
         
         if (extraItems.length === 0) return;
 
-        // Cek apakah elemen pertama masih tersembunyi
         const isHidden = extraItems[0].classList.contains('hidden');
 
-        // Toggle class hidden pada setiap item
         extraItems.forEach(item => {
             if (isHidden) {
                 item.classList.remove('hidden');
@@ -947,7 +1148,6 @@
             }
         });
 
-        // Ubah status tombol dan rotasi panah
         if (isHidden) {
             btnText.textContent = "Sembunyikan";
             btnIcon.classList.add('rotate-180');
@@ -955,7 +1155,6 @@
             btnText.textContent = "Lihat Selengkapnya";
             btnIcon.classList.remove('rotate-180');
             
-            // Scroll kembali ke bagian atas galeri properti
             const targetSection = document.getElementById('properti') || document.getElementById('galeri-props');
             if (targetSection) {
                 targetSection.scrollIntoView({ behavior: 'smooth' });
