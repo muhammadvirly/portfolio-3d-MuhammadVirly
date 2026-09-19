@@ -209,18 +209,21 @@
     <section id="showcase-video" class="py-12 sm:py-16 bg-[#121218]/80 border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             
+            <!-- KOTAK PEMUTAR VIDEO TUNGGAL -->
             <div class="aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
                 
-                <!-- VIDEO BACKGROUND (Atribut src dipasang langsung di tag video) -->
+                <!-- VIDEO BACKGROUND -->
                 <video id="myVideo" class="w-full h-full object-cover" autoplay muted playsinline src="videos/end2.mp4">
                     Browser Anda tidak mendukung pemutar video.
                 </video>
-
+    
                 <!-- GRADIENT OVERLAY -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
-
-                <!-- KONTEN TEKS & TOMBOL -->
+    
+                <!-- KONTEN TEKS & TOMBOL YT UNTUK DESKTOP -->
                 <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 sm:gap-6 z-10">
+                    
+                    <!-- TEKS JUDUL & DESKRIPSI -->
                     <div class="text-left max-w-xl">
                         <span class="text-[10px] sm:text-xs font-bold text-[#F97316] uppercase tracking-widest bg-black/50 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-orange-500/30 backdrop-blur-sm">
                             Featured Trailer
@@ -232,19 +235,28 @@
                             Cuplikan singkat adegan film animasi. Tonton versi lengkapnya di YouTube.
                         </p>
                     </div>
-
-                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-xs sm:text-sm rounded-lg sm:rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 flex items-center justify-center gap-2 whitespace-nowrap hover:scale-105 mt-1 sm:mt-0">
-                        <i class="fa-brands fa-youtube text-base sm:text-lg"></i>
+    
+                    <!-- TOMBOL YOUTUBE (TAMPIL DI LAPTOP/DESKTOP SAJA: hidden sm:flex) -->
+                    <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="hidden sm:flex px-6 py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 items-center justify-center gap-2 whitespace-nowrap hover:scale-105">
+                        <i class="fa-brands fa-youtube text-lg"></i>
                         <span>Tonton Full di YouTube</span>
                     </a>
+    
                 </div>
-
             </div>
-
+    
+            <!-- TOMBOL YOUTUBE KHUSUS MOBILE (TAMPIL DI HP SAJA: flex sm:hidden) -->
+            <div class="mt-4 flex sm:hidden">
+                <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="w-full px-4 py-3 bg-[#FF0000] active:bg-red-700 text-white font-bold text-xs rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i class="fa-brands fa-youtube text-base"></i>
+                    <span>Tonton Full di YouTube</span>
+                </a>
+            </div>
+    
         </div>
     </section>
-
-    <!-- SCRIPT PEMUTARAN BERURUTAN (SUDAH DIPERBAIKI) -->
+    
+    <!-- SCRIPT PEMUTARAN BERURUTAN -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const videoList = [
@@ -253,26 +265,26 @@
                 "videos/end3.mp4",
                 "videos/web.mp4"
             ];
-
+    
             let currentTrack = 0;
             const player = document.getElementById('myVideo');
-
+    
             if (player) {
                 player.addEventListener('ended', function() {
                     currentTrack++;
                     if (currentTrack >= videoList.length) {
                         currentTrack = 0; // Mengulang kembali ke video pertama
                     }
-
+    
                     // Ganti sumber video
                     player.src = videoList[currentTrack];
                     
                     // Muat ulang video baru agar browser siap memutar
                     player.load();
-
+    
                     // Pastikan tetap muted agar tidak diblokir kebijakan Autoplay browser
                     player.muted = true;
-
+    
                     // Putar video berikutnya
                     const playPromise = player.play();
                     if (playPromise !== undefined) {
