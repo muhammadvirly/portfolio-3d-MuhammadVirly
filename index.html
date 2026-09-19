@@ -965,7 +965,7 @@
     </script>
 
     <!-- SECTION KATEGORI 3: ENVIRONMENT & LINGKUNGAN -->
-    <section id="galeri-env" class="py-20 bg-[#0A0A0C] border-t border-[#27273A]">
+    <section id="galeri-env" class="py-12 md:py-20 bg-[#0A0A0C] border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-6">
     
             <!-- HEADER KATEGORI 3 -->
@@ -1021,7 +1021,7 @@
                     </div>
                 </div>
     
-                <!-- 4. Medan Nan Paneh (Ekstra - Tersembunyi Desktop) -->
+                <!-- 4. Medan Nan Paneh (Ekstra) -->
                 <div class="extra-env-desktop hidden opacity-0 translate-y-4 transition-all duration-500 bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] group">
                     <div class="h-56 overflow-hidden bg-black/40">
                         <img src="images/medan nan bapaneh.png" alt="Medan Nan Paneh" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -1035,7 +1035,7 @@
                     </div>
                 </div>
     
-                <!-- 5. Kandang & Kubangan Kerbau (Ekstra - Tersembunyi Desktop) -->
+                <!-- 5. Kandang & Kubangan Kerbau (Ekstra) -->
                 <div class="extra-env-desktop hidden opacity-0 translate-y-4 transition-all duration-500 bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] group">
                     <div class="h-56 overflow-hidden bg-black/40">
                         <img src="images/Kandang kerbau.png" alt="Kandang dan Kubangan Kerbau" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -1049,7 +1049,7 @@
                     </div>
                 </div>
     
-                <!-- 6. Lapangan Adu Kerbau (Ekstra - Tersembunyi Desktop) -->
+                <!-- 6. Lapangan Adu Kerbau (Ekstra) -->
                 <div class="extra-env-desktop hidden opacity-0 translate-y-4 transition-all duration-500 bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
                     <div class="h-56 overflow-hidden bg-black/40">
                         <img src="images/Lapangan.png" alt="Lapangan Adu Kerbau" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -1065,7 +1065,7 @@
                     </div>
                 </div>
     
-                <!-- 7. Kebun Belakang (Ekstra - Tersembunyi Desktop) -->
+                <!-- 7. Kebun Belakang (Ekstra) -->
                 <div class="extra-env-desktop hidden opacity-0 translate-y-4 transition-all duration-500 bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] group">
                     <div class="h-56 overflow-hidden bg-black/40">
                         <img src="images/Lapangan Belakang.png" alt="Kebun Belakang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -1081,8 +1081,8 @@
     
             </div>
     
-            <!-- TOMBOL SHOW MORE (HANYA MUNCUL DI DESKTOP) -->
-            <div class="hidden md:block text-center mt-8">
+            <!-- TOMBOL SHOW MORE (DESKTOP) -->
+            <div class="hidden md:block text-center mt-8 mb-12">
                 <button id="btn-toggle-env" onclick="toggleEnvironment()" class="bg-[#F97316] hover:bg-[#EA580C] text-white text-sm font-semibold px-8 py-3 rounded-xl border border-[#F97316] transition-all duration-300 shadow-lg inline-flex items-center gap-2 group cursor-pointer">
                     <span id="btn-text-env">Lihat Selengkapnya</span>
                     <svg id="btn-icon-env" class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1091,15 +1091,14 @@
                 </button>
             </div>
     
-    
-            <!-- ================= 2. TAMPILAN MOBILE (SLIDER FULL 7 ASET) ================= -->
-            <!-- Perubahan: snap-proximity, scroll-smooth, will-change-transform, & -webkit-overflow-scrolling -->
-            <div id="slider-env-mobile" class="flex md:hidden overflow-x-auto snap-x snap-proximity scroll-smooth will-change-transform gap-4 pb-6 mb-8 scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+            <!-- ================= 2. TAMPILAN MOBILE (HP) ================= -->
+            <!-- Penggunaan -mx-6 px-6 disesuaikan presisi agar slider menyentuh tepi layar HP -->
+            <div class="flex md:hidden overflow-x-auto gap-4 pb-6 snap-x snap-mandatory -mx-6 px-6 scrollbar-none">
     
                 <!-- 1. Sawah -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/sawah.png" alt="Sawah" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/sawah.png" alt="Sawah" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Sawah</h3>
@@ -1112,8 +1111,8 @@
     
                 <!-- 2. Pelabuhan -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/Pantai.png" alt="Pelabuhan" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/Pantai.png" alt="Pelabuhan" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Pelabuhan</h3>
@@ -1128,8 +1127,8 @@
     
                 <!-- 3. Halaman Rumah Gadang -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/halaman rumahgadang.png" alt="Halaman Rumah Gadang" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/halaman rumahgadang.png" alt="Halaman Rumah Gadang" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Halaman Rumah Gadang</h3>
@@ -1142,8 +1141,8 @@
     
                 <!-- 4. Medan Nan Paneh -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/medan nan bapaneh.png" alt="Medan Nan Paneh" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/medan nan bapaneh.png" alt="Medan Nan Paneh" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Medan Nan Paneh</h3>
@@ -1156,8 +1155,8 @@
     
                 <!-- 5. Kandang & Kubangan Kerbau -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/Kandang kerbau.png" alt="Kandang dan Kubangan Kerbau" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/Kandang kerbau.png" alt="Kandang dan Kubangan Kerbau" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Kandang & Kubangan Kerbau</h3>
@@ -1170,8 +1169,8 @@
     
                 <!-- 6. Lapangan Adu Kerbau -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/Lapangan.png" alt="Lapangan Adu Kerbau" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/Lapangan.png" alt="Lapangan Adu Kerbau" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Lapangan Adu Kerbau</h3>
@@ -1186,8 +1185,8 @@
     
                 <!-- 7. Kebun Belakang -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
-                    <div class="h-48 overflow-hidden bg-black/40">
-                        <img src="images/Lapangan Belakang.png" alt="Kebun Belakang" class="zoomable w-full h-full object-cover cursor-zoom-in">
+                    <div class="h-56 overflow-hidden bg-black/40">
+                        <img src="images/Lapangan Belakang.png" alt="Kebun Belakang" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Kebun Belakang</h3>
@@ -1201,8 +1200,7 @@
             </div>
     
         </div>
-    </section>
-    
+    </section>    
     <!-- SCRIPT TOGGLE JAVASCRIPT (SPESIFIK DESKTOP) -->
     <script>
     function toggleEnvironment() {
