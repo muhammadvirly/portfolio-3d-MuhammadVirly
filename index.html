@@ -272,9 +272,9 @@
             </div>
 
             <!-- ================= TAMPILAN MOBILE (HP) ========== -->
-            <!-- Slider horizontal, tanpa tombol Show More/Less -->
-            <div class="flex md:hidden overflow-x-auto gap-4 pb-6 snap-x snap-mandatory -mx-6 px-6 scrollbar-none">
-                
+            <!-- Container Utama Scroll Horizontal Mobile -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:hidden no-scrollbar">
+
                 <!-- 1. Datuk Katumanggungan -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
                     <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
@@ -282,10 +282,11 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Datuk Katumanggungan</h3>
-                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Tokoh leluhur legendaris Minangkabau & penyusun sistem adat Lareh Koto Piliang.</p>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Tokoh leluhur legendaris Minangkabau & penyusun sistem adat Lareh Koto Piliang.</p>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
                             <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Texturing PBR</span>
                         </div>
                     </div>
                 </div>
@@ -297,9 +298,10 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Datuk Parpatiah Nan Sabatang</h3>
-                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D karakter berkonsep stylized low-poly dengan pakaian adat khas.</p>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Model 3D karakter berkonsep stylized low-poly lengkap dengan pakaian adat khas.</p>
                         <div class="flex flex-wrap gap-1.5">
                             <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Culture</span>
                             <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
                         </div>
                     </div>
@@ -312,10 +314,11 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Si'Ai</h3>
-                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Aset figur masyarakat lokal Minangkabau dengan pakaian kasual sehari-hari.</p>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Aset figur masyarakat lokal Minangkabau dengan pakaian kasual sehari-hari.</p>
                         <div class="flex flex-wrap gap-1.5">
                             <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Character</span>
                             <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Villager</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
                         </div>
                     </div>
                 </div>
@@ -327,23 +330,127 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Sutan Malin</h3>
-                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Aset variasi penduduk lokal dengan penyesuaian warna busana tradisional.</p>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Variasi penduduk lokal dengan penyesuaian warna busana & aksesoris tradisional.</p>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. Kerbau Besar -->
+                <!-- 5. Nahkoda -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/nahkoda.png" alt="Nahkoda" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Nahkoda</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Pemimpin kapal perahu besar dengan pakaian tangguh berkarakter maritim.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Pemimpin Pasukan Pendatang -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/p pasukan pendatang.png" alt="Pemimpin Pasukan Pendatang" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Pemimpin Pasukan Pendatang</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Karakter pemimpin asing dengan detail baju zirah dan siluet tegas.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Armor Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Tentara Pasukan Pendatang -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/tentara 1.png" alt="Tentara Pasukan Pendatang" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Tentara Pasukan Pendatang</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Aset prajurit modular untuk kebutuhan formasi pertempuran.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Modular Asset</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Kerbau Besar -->
                 <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
                     <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
                         <iframe title="Kerbau Besar" class="w-full h-full border-0" src="https://sketchfab.com/models/fad596d73bec468aa9ecdf2db6e575f3/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-white text-base mb-1">Kerbau Besar</h3>
-                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D kerbau dengan struktur anatomi teroptimasi.</p>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Model 3D kerbau dengan struktur anatomi teroptimasi.</p>
                         <div class="flex flex-wrap gap-1.5">
                             <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Animal 3D</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Kerbau Kecil -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/Kerbau Kecil.png" alt="Kerbau Kecil" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Kerbau Kecil</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Anak kerbau dalam adegan adu kerbau kunci dengan rigging khusus.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Prop & Animal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Mak Gaek -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/mak gaek.png" alt="Mak Gaek" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Mak Gaek</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">NPC tetua kampung lansia dengan gestur tubuh khas dan pakaian tradisional.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">NPC Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Facial Detail</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Sutan Pamenan -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/Sutan Pamenan.png" alt="Sutan Pamenan" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Sutan Pamenan</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Pemuda kampung berkarakter tangguh khas Minangkabau, topologi efisien.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Rigged</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Syamsiur -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/syamsiur.png" alt="Syamsiur" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Syamsiur</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed line-clamp-2">Karakter pemuda dengan topologi teroptimasi untuk variasi gerakan.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
                         </div>
                     </div>
                 </div>
