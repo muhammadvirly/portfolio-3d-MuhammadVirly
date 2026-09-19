@@ -212,36 +212,40 @@
             <!-- KOTAK PEMUTAR VIDEO TUNGGAL -->
             <div class="aspect-video w-full rounded-xl sm:rounded-2xl overflow-hidden border border-[#27273A] shadow-2xl bg-black relative group">
                 
-                <!-- VIDEO BACKGROUND -->
-                <video id="myVideo" class="w-full h-full object-cover" autoplay muted playsinline src="videos/end2.mp4">
+                <!-- VIDEO PLAYER 1 (UTAMA) -->
+                <video id="video1" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-700 opacity-100" autoplay muted playsinline src="videos/end.mp4">
                     Browser Anda tidak mendukung pemutar video.
                 </video>
-    
+
+                <!-- VIDEO PLAYER 2 (CADANGAN UNTUK TRANSISI SMOOTH) -->
+                <video id="video2" class="w-full h-full object-cover absolute inset-0 transition-opacity duration-700 opacity-0" muted playsinline>
+                </video>
+
                 <!-- GRADIENT OVERLAY -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none"></div>
-    
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent pointer-events-none z-10"></div>
+
                 <!-- KONTEN TEKS & TOMBOL YT UNTUK DESKTOP -->
-                <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 sm:gap-6 z-10">
+                <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 sm:gap-6 z-20">
                     
-                <!-- TEKS JUDUL & DESKRIPSI (SUPER PADAT) -->
-                <div class="text-left max-w-xl">
-                    <h2 class="text-base sm:text-2xl md:text-4xl font-extrabold text-white drop-shadow-md">
-                        Showcase Animasi 3D
-                    </h2>
-                    <p class="text-gray-300 text-[10px] sm:text-xs md:text-sm drop-shadow line-clamp-1 sm:line-clamp-none mt-0.5">
-                        Cuplikan singkat film animasi. Tonton versi lengkapnya di YouTube.
-                    </p>
-                </div>
-    
+                    <!-- TEKS JUDUL & DESKRIPSI (SUPER PADAT) -->
+                    <div class="text-left max-w-xl">
+                        <h2 class="text-base sm:text-2xl md:text-4xl font-extrabold text-white drop-shadow-md">
+                            Showcase Animasi 3D
+                        </h2>
+                        <p class="text-gray-300 text-[10px] sm:text-xs md:text-sm drop-shadow line-clamp-1 sm:line-clamp-none mt-0.5">
+                            Cuplikan singkat film animasi. Tonton versi lengkapnya di YouTube.
+                        </p>
+                    </div>
+
                     <!-- TOMBOL YOUTUBE (TAMPIL DI LAPTOP/DESKTOP SAJA: hidden sm:flex) -->
                     <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="hidden sm:flex px-6 py-3 bg-[#FF0000] hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 items-center justify-center gap-2 whitespace-nowrap hover:scale-105">
                         <i class="fa-brands fa-youtube text-lg"></i>
                         <span>Tonton Full di YouTube</span>
                     </a>
-    
+
                 </div>
             </div>
-    
+
             <!-- TOMBOL YOUTUBE KHUSUS MOBILE (TAMPIL DI HP SAJA: flex sm:hidden) -->
             <div class="mt-4 flex sm:hidden">
                 <a href="https://www.youtube.com/watch?v=irUoq5XVKYg" target="_blank" rel="noopener noreferrer" class="w-full px-4 py-3 bg-[#FF0000] active:bg-red-700 text-white font-bold text-xs rounded-xl transition-all duration-300 shadow-lg shadow-red-600/30 flex items-center justify-center gap-2 whitespace-nowrap">
@@ -249,48 +253,65 @@
                     <span>Tonton Full di YouTube</span>
                 </a>
             </div>
-    
+
         </div>
     </section>
-    
-    <!-- SCRIPT PEMUTARAN BERURUTAN -->
+
+    <!-- SCRIPT PEMUTARAN SMOOTH CROSSFADE -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const videoList = [
                 "videos/end.mp4",
                 "videos/end2.mp4",
                 "videos/end3.mp4",
+                "videos/2.2.mp4",
+                "videos/5.4 C.mp4",
+                "videos/5.4 E.mp4",
                 "videos/web.mp4"
             ];
-    
+
             let currentTrack = 0;
-            const player = document.getElementById('myVideo');
-    
-            if (player) {
-                player.addEventListener('ended', function() {
-                    currentTrack++;
-                    if (currentTrack >= videoList.length) {
-                        currentTrack = 0; // Mengulang kembali ke video pertama
-                    }
-    
-                    // Ganti sumber video
-                    player.src = videoList[currentTrack];
-                    
-                    // Muat ulang video baru agar browser siap memutar
-                    player.load();
-    
-                    // Pastikan tetap muted agar tidak diblokir kebijakan Autoplay browser
-                    player.muted = true;
-    
-                    // Putar video berikutnya
-                    const playPromise = player.play();
+            let activePlayer = document.getElementById('video1');
+            let nextPlayer = document.getElementById('video2');
+
+            function setupVideoEnding(player) {
+                player.onended = function() {
+                    // Tentukan indeks video berikutnya
+                    currentTrack = (currentTrack + 1) % videoList.length;
+
+                    // Siapkan pemutar berikutnya di latar belakang
+                    nextPlayer.src = videoList[currentTrack];
+                    nextPlayer.load();
+                    nextPlayer.muted = true;
+
+                    // Mulai putar pemutar berikutnya
+                    const playPromise = nextPlayer.play();
                     if (playPromise !== undefined) {
-                        playPromise.catch(error => {
-                            console.log("Autoplay diblokir oleh browser:", error);
+                        playPromise.then(() => {
+                            // Efek Crossfade smooth:
+                            // Pemutar aktif memudar out, pemutar baru memudar in
+                            activePlayer.classList.remove('opacity-100');
+                            activePlayer.classList.add('opacity-0');
+
+                            nextPlayer.classList.remove('opacity-0');
+                            nextPlayer.classList.add('opacity-100');
+
+                            // Tukar peran activePlayer dan nextPlayer
+                            const temp = activePlayer;
+                            activePlayer = nextPlayer;
+                            nextPlayer = temp;
+
+                            // Pasang event listener 'ended' ke pemutar yang sekarang aktif
+                            setupVideoEnding(activePlayer);
+                        }).catch(error => {
+                            console.log("Autoplay diblokir:", error);
                         });
                     }
-                });
+                };
             }
+
+            // Jalankan listener awal
+            setupVideoEnding(activePlayer);
         });
     </script>
     
