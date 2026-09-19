@@ -261,8 +261,8 @@
         </div>
     </section>
     
-    <!-- SECTION SHOWCASE ASET & KARAKTER -->
-    <section id="galeri-aset" class="py-20 bg-[#0A0A0C] border-t border-[#27273A]">
+<!-- SECTION SHOWCASE ASET & KARAKTER -->
+    <section id="galeri-aset" class="py-12 md:py-20 bg-[#0A0A0C] border-t border-[#27273A]">
         <div class="max-w-7xl mx-auto px-6">
             
             <!-- HEADER KATEGORI 1: KARAKTER -->
@@ -271,21 +271,93 @@
                 <p class="text-gray-400 text-sm">Daftar model karakter manusia dan hewan beserta deskripsi tugas pengerjaannya.</p>
             </div>
 
-            <!-- GRID KARAKTER -->
-            <div id="grid-karakter" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <!-- ================= TAMPILAN MOBILE (HP) ========== -->
+            <!-- Slider horizontal, tanpa tombol Show More/Less -->
+            <div class="flex md:hidden overflow-x-auto gap-4 pb-6 snap-x snap-mandatory -mx-6 px-6 scrollbar-none">
+                
+                <!-- 1. Datuk Katumanggungan -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Datuk Katumanggungan" class="w-full h-full border-0" src="https://sketchfab.com/models/6ee0fc88ba08479e8173b9ed4678707b/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Datuk Katumanggungan</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Tokoh leluhur legendaris Minangkabau & penyusun sistem adat Lareh Koto Piliang.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Sketchfab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Datuk Parpatiah Nan Sabatang -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Datuk Parpatiah Nan Sabatang" class="w-full h-full border-0" src="https://sketchfab.com/models/00a284efe424453993ce29c8f92a630b/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Datuk Parpatiah Nan Sabatang</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D karakter berkonsep stylized low-poly dengan pakaian adat khas.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Low Poly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Si'Ai -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Si'Ai" class="w-full h-full border-0" src="https://sketchfab.com/models/0a0e033b1e9c48d7aa79fb29627575a5/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Si'Ai</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Aset figur masyarakat lokal Minangkabau dengan pakaian kasual sehari-hari.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Character</span>
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Villager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Sutan Malin -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] p-4 flex items-center justify-center">
+                        <img src="images/w2.png" alt="Sutan Malin" class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Sutan Malin</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Aset variasi penduduk lokal dengan penyesuaian warna busana tradisional.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-gray-300 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">3D Character</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Kerbau Besar -->
+                <div class="snap-center shrink-0 w-[85vw] max-w-[320px] bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden">
+                    <div class="h-64 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
+                        <iframe title="Kerbau Besar" class="w-full h-full border-0" src="https://sketchfab.com/models/fad596d73bec468aa9ecdf2db6e575f3/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-white text-base mb-1">Kerbau Besar</h3>
+                        <p class="text-gray-400 text-xs mb-3 leading-relaxed">Model 3D kerbau dengan struktur anatomi teroptimasi.</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-[#1A1A24] text-orange-400 text-[10px] px-2 py-0.5 rounded-md border border-[#27273A]">Animal 3D</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= TAMPILAN DESKTOP (WEB) ========== -->
+            <!-- Tampilan grid asli milik Anda (hanya tayang di desktop via md:grid) -->
+            <div id="grid-karakter" class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 
                 <!-- 1. Datuk Katumanggungan -->
                 <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition group">
                     <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                        <iframe 
-                            title="Datuk Katumanggungan" 
-                            class="w-full h-full border-0"
-                            src="https://sketchfab.com/models/6ee0fc88ba08479e8173b9ed4678707b/embed?autostart=1&ui_theme=dark" 
-                            allow="autoplay; fullscreen; xr-spatial-tracking" 
-                            execution-while-out-of-viewport 
-                            execution-while-not-rendered 
-                            web-share>
-                        </iframe>
+                        <iframe title="Datuk Katumanggungan" class="w-full h-full border-0" src="https://sketchfab.com/models/6ee0fc88ba08479e8173b9ed4678707b/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-white text-lg mb-2">Datuk Katumanggungan</h3>
@@ -303,15 +375,7 @@
                 <!-- 2. Datuk Parpatiah Nan Sabatang -->
                 <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
                     <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                        <iframe 
-                            title="Datuk Parpatiah Nan Sabatang" 
-                            class="w-full h-full border-0"
-                            src="https://sketchfab.com/models/00a284efe424453993ce29c8f92a630b/embed?autostart=1&ui_theme=dark" 
-                            allow="autoplay; fullscreen; xr-spatial-tracking" 
-                            execution-while-out-of-viewport 
-                            execution-while-not-rendered 
-                            web-share>
-                        </iframe>
+                        <iframe title="Datuk Parpatiah Nan Sabatang" class="w-full h-full border-0" src="https://sketchfab.com/models/00a284efe424453993ce29c8f92a630b/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-white text-lg mb-2">Datuk Parpatiah Nan Sabatang</h3>
@@ -330,15 +394,7 @@
                 <!-- 3. Si'Ai -->
                 <div class="bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
                     <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                        <iframe 
-                            title="Si'Ai" 
-                            class="w-full h-full border-0"
-                            src="https://sketchfab.com/models/0a0e033b1e9c48d7aa79fb29627575a5/embed?autostart=1&ui_theme=dark" 
-                            allow="autoplay; fullscreen; xr-spatial-tracking" 
-                            execution-while-out-of-viewport 
-                            execution-while-not-rendered 
-                            web-share>
-                        </iframe>
+                        <iframe title="Si'Ai" class="w-full h-full border-0" src="https://sketchfab.com/models/0a0e033b1e9c48d7aa79fb29627575a5/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-white text-lg mb-2">Si'Ai</h3>
@@ -417,15 +473,7 @@
                 <!-- 8. Kerbau Besar (Sembunyi) -->
                 <div class="item-extra hidden bg-[#121218] border border-[#27273A] rounded-2xl overflow-hidden hover:border-[#F97316] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10 group">
                     <div class="h-80 overflow-hidden bg-[#0A0A0E] relative flex items-center justify-center">
-                        <iframe 
-                            title="Kerbau Besar" 
-                            class="w-full h-full border-0"
-                            src="https://sketchfab.com/models/fad596d73bec468aa9ecdf2db6e575f3/embed?autostart=1&ui_theme=dark" 
-                            allow="autoplay; fullscreen; xr-spatial-tracking" 
-                            execution-while-out-of-viewport 
-                            execution-while-not-rendered 
-                            web-share>
-                        </iframe>
+                        <iframe title="Kerbau Besar" class="w-full h-full border-0" src="https://sketchfab.com/models/fad596d73bec468aa9ecdf2db6e575f3/embed?autostart=1&ui_theme=dark" allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport execution-while-not-rendered web-share></iframe>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-white text-lg mb-2">Kerbau Besar</h3>
@@ -505,8 +553,8 @@
 
             </div>
 
-            <!-- TOMBOL SHOW MORE / LESS -->
-            <div class="text-center mt-8">
+            <!-- TOMBOL SHOW MORE / LESS (Hanya tayang di Desktop) -->
+            <div class="hidden md:block text-center mt-8">
                 <button id="btn-toggle-karakter" onclick="toggleKarakter()" class="bg-[#1A1A24] hover:bg-[#F97316] text-white text-sm font-semibold px-8 py-3 rounded-xl border border-[#27273A] hover:border-[#F97316] transition-all duration-300 shadow-lg inline-flex items-center gap-2 group">
                     <span id="btn-text">Lihat Selengkapnya</span>
                     <svg id="btn-icon" class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
